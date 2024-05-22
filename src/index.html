@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="images/dog.png" />
+    <title>LATF SOL</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="flex flex-row w-full bg-black justify-between items-center py-7 px-7 fixed"
+      id="navBar"
+    >
+      <div class="logo flex flex-row gap-2 ">
+        <div class="logoImg w-[60px] h-[60px]">
+          <img src="images/dog.png" alt="" class="w-full h-full" />
+        </div>
+
+        <div class="logoText">
+          <p
+            class="text-[23px] md:text-[25px] text-white pt-[10px] luckiest-guy-regular"
+          >
+            LATF
+          </p>
+        </div>
+      </div>
+
+      <div class="navTexts" id="navLinks">
+        <ul class="gap-x-10 pt-[10px] flex flex-row">
+          <li class="text-white text-[21px] macondo-regular ulLinks">
+            <a href="#banner" id="closer1">Home</a>
+          </li>
+          <li class="text-white text-[21px] macondo-regular ulLinks">
+            <a href="#tokenomics" id="closer2">Tokenomics</a>
+          </li>
+          <li class="text-white text-[21px] macondo-regular ulLinks">
+            <a href="#socials" id="closer3">Socials</a>
+          </li>     
+        </ul>
+
+        <a href="#navLinks"
+          ><svg
+            class="flex md:hidden my-[15px]"
+            id="close"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></a>
+      </div>
+
+      <div id="mobile">
+        <a href="#navLinks">
+          <svg
+            class="flex md:hidden my-[15px]"
+            id="bar"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section
+      class="flex banner mainBg w-full justify-center text-center items-center relative"
+      id="banner"
+    >
+      <div
+        class="bannerContents flex flex-col justify-center text-center items-center"
+      >
+        <div class="bannerText">
+          <p
+            class="text-white macondo-regular font-bold text-2xl phone:text-4xl bigPhone:text-5xl md:text-6xl pb-[30px] t"
+          >
+            LOOK AT THE FACE
+          </p>
+        </div>
+        <div class="shadow-black vidBubble">
+          <img src="images/dgNr-removebg.png" alt="" class="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="tokenomics w-full" id="tokenomics">
+      <div class="tokenomicsText">
+        <p class="luckiest-guy-regular">Tokenomics</p>
+      </div>
+      <div
+        class="tokenomicsContainer justify-center text-center items-center macondo-regular flex flex-wrap flex-col"
+      >
+        <div
+          class="contAddress flex-col flex-wrap justify-center text-center items-center"
+        >
+          <p>Contract Address:</p>
+          <span>62mekp7XyK84P7QC7GdnPA2oXRRLadHgrzzWETCjr1o</span>
+        </div>
+        <div class="tokenomicsBox2 flex-row flex">
+          <div class="ticker ticker1 tickBorder1">
+            <p>Ticker:</p>
+            <span>$LATF</span>
+          </div>
+          <div class="ticker ticker1 tickBorder2">
+            <p>Tax:</p>
+            <span>0%</span>
+          </div>
+          <div class="ticker tickBorder3">
+            <p>LP:</p>
+            <span>Burned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIALS -->
+    <section class="socials" id="socials">
+      <div class="officialLinksText">
+        <p class="luckiest-guy-regular">Official Links</p>
+      </div>
+
+      <div
+        class="offLinksIcons flex flex-wrap justify-center text-center items-center md:flex-row"
+      >
+        <div class="twitterIcon offLinkIcon1">
+          <a href="https://twitter.com/LATFSOLCOIN"
+            ><img
+              src="images/twitterImg.webp"
+              alt=""
+              width="100%"
+              height="100%"
+          /></a>
+        </div>
+
+        <div class="telegramIcon offLinkIcon2">
+          <a href="https://t.me/LATFSOLCOIN">
+            <img
+              src="images/TelegramImg.webp"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </a>
+        </div>
+
+        <div class="dexscreenerImg offLinkIcon3">
+          <a
+            href="https://dexscreener.com/solana/4g75qvuvslj2127pdpmjxksygf8mo7r2scznmkqocj7r"
+            ><img src="images/dexscreener img2.png " alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="footerText">
+        <p class="macondo-regular">Copyrights reserved. @ LATF 2024</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

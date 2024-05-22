@@ -1,0 +1,348 @@
+/* CUSTOM CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Macondo&display=swap");
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.macondo-regular {
+  font-family: "Macondo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+    margin-left: 90px;
+}
+
+#navBar {
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.mainBg {
+  background-image: linear-gradient(
+    to right,
+    rgba(51, 51, 224, 0.753),
+    rgba(165, 33, 125, 0.774)
+  );
+}
+
+.logoImg img:hover {
+  animation: rotate 1s 1 forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.ulLinks :hover {
+  color: rgb(204, 23, 150);
+}
+
+.banner {
+  min-height: 85vh;
+}
+.bannerImg {
+  margin-top: 10px;
+}
+
+/* ANIMATION */
+
+.vidBubble {
+  z-index: 10;
+  animation: bubbleFloat 5s linear infinite;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+/* HOW TO BUY */
+
+.howToBuY {
+  background-image: linear-gradient(
+    to right,
+    rgba(23, 23, 145, 0.753),
+    rgba(165, 33, 125, 0.774)
+  );
+}
+
+.tokenomics {
+  background-color: lavender;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 5px;
+}
+
+.tokenomicsText {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.tokenomicsText p {
+  font-size: 40px;
+}
+
+.tokenomicsContainer {
+  padding-top: 20px;
+}
+
+.contAddress {
+  border: 0.14rem solid rgba(51, 51, 224, 0.753);
+  width: 88%;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.contAddress p {
+  font-size: 24px;
+}
+
+.contAddress span {
+  display: inline-block;
+  font-size: 20px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+.tokenomicsBox2 {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ticker {
+  border: 0.14rem solid rgba(51, 51, 224, 0.753);
+  width: 28%;
+  border-radius: 2px;
+}
+
+.ticker P {
+  font-size: 20px;
+}
+
+.ticker1 {
+  margin-right: 17px;
+}
+
+.tickBorder1 {
+  border: 0.14rem solid rgba(165, 33, 125, 0.774);
+}
+
+.tickBorder3 {
+  border: 0.14rem solid rgba(165, 33, 125, 0.774);
+}
+
+@media (max-width: 480px) {
+  .tokenomicsText p {
+    font-size: 30px;
+  }
+
+  .contAddress {
+    border: 0.14rem solid rgba(51, 51, 224, 0.753);
+    width: 88%;
+    border-radius: 2px;
+    margin-bottom: 15px;
+  }
+
+  .contAddress p {
+    font-size: 19px;
+  }
+
+  .contAddress span {
+    font-size: 14px;
+  }
+
+  .ticker span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contAddress span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 377px) {
+  .contAddress span {
+    font-size: 12px;
+  }
+
+  .ticker span {
+    font-size: 12px;
+  }
+}
+
+/* SOCIALS */
+
+.socials {
+  width: 100%;
+  background-color: lavender;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.officialLinksText {
+  padding-bottom: 50px;
+}
+
+.officialLinksText {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.officialLinksText p {
+  font-size: 40px;
+}
+
+.offLinksIcons {
+  gap: 10px;
+}
+
+.offLinkIcon1 {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 15px;
+}
+
+.offLinkIcon1:hover {
+  border: 2px solid rgba(51, 51, 224, 0.753);
+}
+
+.offLinkIcon2 {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 18px;
+}
+
+.offLinkIcon2:hover {
+  border: 2px solid rgba(165, 33, 125, 0.774);
+}
+
+.offLinkIcon3 {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 0;
+}
+.offLinkIcon3:hover {
+  border: 2px solid rgba(51, 51, 224, 0.753);
+}
+
+@media (max-width: 320px) {
+  .offLinksIcons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .officialLinksText p {
+    font-size: 30px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+}
+
+.footerText {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.footerText p {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    width: 100%;
+    background-color: #000;
+  }
+
+  #navLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    right: -300px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: #fff;
+    width: 200px;
+    top: 0px;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0px 0 400px 20px;
+    box-shadow: 0 40px 60px rgba(196, 179, 179, 0.1);
+    transition: 1s;
+  }
+
+  #navBar ul {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navBar ul li {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navLinks.active {
+    right: 0;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 13px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    margin-top: -350px;
+    left: 30px;
+    font-size: 25px;
+  }
+}
